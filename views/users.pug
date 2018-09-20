@@ -5,13 +5,10 @@ block content
 	table.table.table-bordered
 		thead
 			tr 
-				th Username
 				th Name
 				th Email
 		tbody
 			- for(var user in data)
-				tr 
-					td
-						a(href="/user/"+user) #{user}
+				tr
 					td=data[user].name
 					td=data[user].email
